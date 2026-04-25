@@ -34,3 +34,29 @@ No code. No manual steps. Fully automated.
 ---
 
 ## 🏗️ Pipeline Architecture
+
+Tally Form → Zapier → Google Gemini AI → Google Docs (saved to Drive)
+→ Gmail (HTML Management Report)
+
+---
+
+## 🔗 Live Links
+
+- 🌐 Landing Page: [samanvay-ai-insight.lovable.app](https://samanvay-ai-insight.lovable.app)
+
+---
+
+## 💡 Key Technical Decisions
+
+- **Pure HTML output from Gemini** — instructed to use only `h3` and `p` tags to avoid markdown rendering issues in Gmail
+- **3 sequential Zapier Formatter steps** — each strips one character type (`\n`, `['`, `']`) since free plan doesn't support multi-replace
+- **"Candidates Content Parts Text" field** used from Gemini (not "Step Output") to avoid array bracket wrapping
+- **Individual step retesting** in Zapier to avoid stale cached data issues
+
+---
+
+## 👩‍💻 Built By
+
+**Bhuvaneshwari V Raghavan**  
+BI & Data Analytics Professional | IIT Roorkee Executive PG — Data Analytics  
+🔗 [LinkedIn](https://www.linkedin.com/in/bhuvaneshwari-vijay-data-analyst) | 📧 bhuvaneshwari.vijay@gmail.com
